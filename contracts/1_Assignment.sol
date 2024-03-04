@@ -10,12 +10,14 @@ pragma solidity >=0.8.2 <0.9.0;
 contract Assignment {
 
     string name;
+    uint256 sum;
+    uint256 dividedValue;
 
     /**
      * @dev Store value in variable
      * @param currName value to store
      */
-    function getName(string memory currName) public {
+    function storeName(string memory currName) public {
         name = currName;
     }
 
@@ -23,7 +25,26 @@ contract Assignment {
      * @dev Return value 
      * @return value of 'name'
      */
-    function retrieve() public view returns (string memory){
+    function retieveName() public view returns (string memory){
         return name;
+    }
+    
+    /**
+     * @dev Add numbers & return value 
+     * @return value of 'sum'
+     */
+
+    function addNumbers(uint256 num1, uint256 num2) public returns (uint256){
+        sum = num1 + num2;
+        return sum;
+    }
+    
+    /**
+     * @dev Divide numbers & return value 
+     * @return value of 'dividedValue'
+     */
+    function divideNumbers(uint256 num1, uint256 num2) public returns (uint256){
+        dividedValue = num1 / num2;
+        return dividedValue;
     }
 }

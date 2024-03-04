@@ -8,19 +8,54 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "currName",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num2",
+						"type": "uint256"
 					}
 				],
-				"name": "getName",
-				"outputs": [],
+				"name": "addNumbers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num2",
+						"type": "uint256"
+					}
+				],
+				"name": "divideNumbers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "retrieve",
+				"name": "retieveName",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -30,6 +65,19 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "currName",
+						"type": "string"
+					}
+				],
+				"name": "storeName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -37,16 +85,28 @@
 			"details": "Store & retrieve value in a variable",
 			"kind": "dev",
 			"methods": {
-				"getName(string)": {
-					"details": "Store value in variable",
-					"params": {
-						"currName": "value to store"
+				"addNumbers(uint256,uint256)": {
+					"details": "Add numbers & return value ",
+					"returns": {
+						"_0": "value of 'sum'"
 					}
 				},
-				"retrieve()": {
+				"divideNumbers(uint256,uint256)": {
+					"details": "Divide numbers & return value ",
+					"returns": {
+						"_0": "value of 'dividedValue'"
+					}
+				},
+				"retieveName()": {
 					"details": "Return value ",
 					"returns": {
 						"_0": "value of 'name'"
+					}
+				},
+				"storeName(string)": {
+					"details": "Store value in variable",
+					"params": {
+						"currName": "value to store"
 					}
 				}
 			},
@@ -76,11 +136,11 @@
 	},
 	"sources": {
 		"contracts/1_Assignment.sol": {
-			"keccak256": "0xe040a711db53e898cfe7168b1a2b3a0c2ae045f295c19e36c6f2487ca5a68eae",
+			"keccak256": "0xfff51827910aa32ff6ca0a403a7f89f95c6d6f1e85255e156bd1d8be808824ff",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e4d20cf65999f516367f68ceaa4f9bfa265dcd04303aef86f9fa7addd97d8ade",
-				"dweb:/ipfs/QmVrTVQYMhzDpttVVjWz4Ymz3E9qGXwnnoaArLW3UrWdZP"
+				"bzz-raw://1095a936a81f2534a49d595dc6781a33dda2538d8c7de6f40a61f75c26fb1dcf",
+				"dweb:/ipfs/QmPu3aRrdoJ5WBpTJZoAxfQ77H1JXZsFmwkpG4x8a9XtUa"
 			]
 		}
 	},
