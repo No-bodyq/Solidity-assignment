@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "currName",
+						"type": "string"
+					}
+				],
+				"name": "getName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"details": "Store & retrieve value in a variable",
+			"kind": "dev",
+			"methods": {
+				"getName(string)": {
+					"details": "Store value in variable",
+					"params": {
+						"currName": "value to store"
+					}
+				},
+				"retrieve()": {
+					"details": "Return value ",
+					"returns": {
+						"_0": "value of 'name'"
+					}
+				}
+			},
+			"title": "Assignment",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/1_Assignment.sol": "Assignment"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/1_Assignment.sol": {
+			"keccak256": "0xe040a711db53e898cfe7168b1a2b3a0c2ae045f295c19e36c6f2487ca5a68eae",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://e4d20cf65999f516367f68ceaa4f9bfa265dcd04303aef86f9fa7addd97d8ade",
+				"dweb:/ipfs/QmVrTVQYMhzDpttVVjWz4Ymz3E9qGXwnnoaArLW3UrWdZP"
+			]
+		}
+	},
+	"version": 1
+}
